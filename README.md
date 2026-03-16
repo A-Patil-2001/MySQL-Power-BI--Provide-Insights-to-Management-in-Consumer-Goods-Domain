@@ -82,3 +82,27 @@
 > 10. Top 3 products in each division by sold quantity in 2021.
 
 - All queries used to answer these questions are available in the SQL folder.
+
+## Key Insights
+
+- Some important findings from the analysis include:
+
+> 1. Significant growth in unique products between 2020 and 2021
+
+> 2. Certain product segments expanded more aggressively
+
+> 3. A small number of customers receive higher discounts, impacting margins
+
+> 4. Specific sales channels contribute the majority of revenue
+
+> 5. Some products show high manufacturing cost but lower sales performance
+
+- These insights can help management improve:
+
+> 1. Pricing strategy
+
+> 2.Product portfolio planning
+
+> 3.Customer discount policies
+
+>4. Channel performance optimization
