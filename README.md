@@ -18,3 +18,13 @@
 - Present findings in a clear and visually engaging presentation
 
 - Demonstrate both technical SQL skills and analytical thinking
+
+## Tools & Technologies
+
+- SQL (MySQL)
+
+- Power BI (for visualization)
+
+- Power-Query (for Data Transformarion)
+
+- GitHub (project documentation)
