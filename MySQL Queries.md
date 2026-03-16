@@ -11,11 +11,9 @@ WHERE
 
 ## Request 2
 > 2) What is the percentage of unique product increase in 2021 vs. 2020? The final output contains these fields, 
-```
--- unique_products_2020 
--- unique_products_2021 
--- percentage_chg
-```
+- unique_products_2020 
+- unique_products_2021 
+- percentage_chg
 ``` sql
 -- USING CTE
 WITH cte1 AS (SELECT 
@@ -47,10 +45,8 @@ FROM(
 ## Request 3
 > 3) Provide a report with all the unique product counts for each  segment  and sort them in descending order of product counts. 
 The final output contains 2 fields, 
-```
--- segment 
--- product_count
-```
+- segment 
+- product_count
 ``` sql
 SELECT 
 	segment,
@@ -62,12 +58,10 @@ ORDER BY product DESC;
 
 ## Request 4
 > 4. Follow-up: Which segment had the most increase in unique products in 2021 vs 2020? The final output contains these fields, 
-```
--- segment 
--- product_count_2020 
--- product_count_2021 
--- difference
-```
+- segment 
+- product_count_2020 
+- product_count_2021 
+- difference
 ``` sql
 WITH cte2 AS (SELECT 
 					segment,
@@ -85,11 +79,9 @@ FROM cte2;
 
 # Request 5
 > 5. Get the products that have the highest and lowest manufacturing costs. The final output should contain these fields, 
-```
--- product_code 
--- product 
--- manufacturing_cost
-```
+- product_code 
+- product 
+- manufacturing_cost
 ``` sql
 -- USING CTE
 WITH cte3 AS (SELECT 
@@ -130,11 +122,9 @@ ORDER BY manufacturing_cost DESC;
 
 # Request 6
 > 6. Generate a report which contains the top 5 customers who received an average high pre_invoice_discount_pct  for the  fiscal  year 2021  and in the Indian  market. The final output contains these fields, 
-```
--- customer_code 
--- customer 
--- average_discount_percentage
-```
+- customer_code 
+- customer 
+- average_discount_percentage
 ``` sql
 SELECT 
 	c.customer_code,
