@@ -145,7 +145,7 @@ LIMIT 5;
 - Month 
 - Year 
 - Gross sales Amount 
-*/
+``` sql
  SELECT 
 	CONCAT(MONTHNAME(s.date), ' (', YEAR(s.date), ')') AS month,
     s.fiscal_year,
@@ -161,3 +161,4 @@ ON
 WHERE c.customer = "Atliq Exclusive"
 GROUP BY month,s.fiscal_year
 ORDER BY s.fiscal_year;
+```
