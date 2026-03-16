@@ -59,3 +59,71 @@ FROM dim_product
 GROUP BY segment
 ORDER BY product DESC;
 ```
+
+## Request 4
+> 4. Follow-up: Which segment had the most increase in unique products in 2021 vs 2020? The final output contains these fields, 
+```
+-- segment 
+-- product_count_2020 
+-- product_count_2021 
+-- difference
+```
+``` sql
+WITH cte2 AS (SELECT 
+					segment,
+					COUNT(DISTINCT CASE WHEN fiscal_year = 2020 THEN p.product_code END) as unique_product_2020,
+					COUNT(DISTINCT CASE WHEN fiscal_year = 2021 THEN p.product_code END) as unique_product_2021
+				FROM dim_product p
+				JOIN fact_sales_monthly s
+				ON p.product_code = s.product_code
+				GROUP BY segment)
+SELECT 
+	*,
+    unique_product_2021 - unique_product_2020 AS difference
+FROM cte2;
+```
+
+# Request 5
+> 5. Get the products that have the highest and lowest manufacturing costs. The final output should contain these fields, 
+```
+-- product_code 
+-- product 
+-- manufacturing_cost
+```
+``` sql
+-- USING CTE
+WITH cte3 AS (SELECT 
+					p.product_code,
+					p.product,
+					SUM(m.manufacturing_cost) AS manufacturing_cost 
+				FROM dim_product p
+				JOIN fact_manufacturing_cost m
+				ON p.product_code = m.product_code
+                WHERE m.cost_year = 2021
+				GROUP BY p.product_code, p.product)
+SELECT 
+	*
+FROM cte3
+WHERE manufacturing_cost = (SELECT 
+								MAX(manufacturing_cost)
+							FROM cte3)
+                            OR
+	   manufacturing_cost = (SELECT 
+                                MIN(manufacturing_cost)
+							FROM cte3)
+ORDER BY manufacturing_cost DESC;
+
+-- USING SUB-QUERY
+SELECT 
+	p.product_code,
+	p.product,
+	SUM(m.manufacturing_cost) AS manufacturing_cost
+FROM dim_product p
+JOIN fact_manufacturing_cost m
+ON p.product_code = m.product_code
+WHERE manufacturing_cost IN (SELECT MAX(manufacturing_cost) FROM fact_manufacturing_cost
+							 UNION
+                             SELECT MIN(manufacturing_cost) FROM fact_manufacturing_cost)
+GROUP BY p.product_code, p.product
+ORDER BY manufacturing_cost DESC;
+```
