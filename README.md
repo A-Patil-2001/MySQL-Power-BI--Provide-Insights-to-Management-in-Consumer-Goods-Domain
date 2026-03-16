@@ -55,29 +55,30 @@
 - [X] Manufacturing costs
 
 - [X] Profitability insights
+      
 
 ## Business Requests
 
-1. The management requested insights for the following 10 ad-hoc questions:
+- The management requested insights for the following 10 ad-hoc questions:
 
-List markets in which "Atliq Exclusive" operates in the APAC region.
+1. List markets in which "Atliq Exclusive" operates in the APAC region.
 
-Percentage of unique product increase in 2021 vs 2020.
+2. Percentage of unique product increase in 2021 vs 2020.
 
-Report of unique product counts for each product segment.
+3. Report of unique product counts for each product segment.
 
-Segment with the highest increase in unique products in 2021 vs 2020.
+4. Segment with the highest increase in unique products in 2021 vs 2020.
 
-Products with the highest and lowest manufacturing costs.
+5. Products with the highest and lowest manufacturing costs.
 
-Top 5 customers who received high average pre-invoice discounts in 2021 in India.
+6. Top 5 customers who received high average pre-invoice discounts in 2021 in India.
 
-Monthly gross sales for customer "Atliq Exclusive".
+7. Monthly gross sales for customer "Atliq Exclusive".
 
-Quarter with the maximum total sold quantity in 2020.
+8. Quarter with the maximum total sold quantity in 2020.
 
-Channel contributing maximum gross sales in 2021 and percentage contribution.
+9. Channel contributing maximum gross sales in 2021 and percentage contribution.
 
-Top 3 products in each division by sold quantity in 2021.
+10. Top 3 products in each division by sold quantity in 2021.
 
-All queries used to answer these questions are available in the SQL folder.
+- All queries used to answer these questions are available in the SQL folder.
