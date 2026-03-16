@@ -28,3 +28,29 @@
 - Power-Query (for Data Transformarion)
 
 - GitHub (project documentation)
+
+## Dataset Description
+
+- The dataset contains multiple tables related to the business operations of AtliQ Hardwares.
+
+- Main tables include:
+
+- Table Name	                                            Description
+dim_customer	                                            Customer information
+dim_product	                                              Product details
+fact_sales_monthly	                                      Monthly sales transactions
+fact_manufacturing_cost	                                  Product manufacturing costs
+fact_pre_invoice_deductions	                              Pre-invoice deductions
+fact_gross_price	                                        Product pricing data
+
+- These datasets help analyze:
+
+[X] Product performance
+
+[X] Sales trends
+
+[X] Market performance
+
+[X] Manufacturing costs
+
+[X] Profitability insights
