@@ -101,8 +101,8 @@
 
 > 1. Pricing strategy
 
-> 2.Product portfolio planning
+> 2. Product portfolio planning
 
-> 3.Customer discount policies
+> 3. Customer discount policies
 
->4. Channel performance optimization
+> 4. Channel performance optimization
