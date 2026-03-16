@@ -1,4 +1,4 @@
-# AtliQ Hardware – SQL Business Insights Challenge
+# AtliQ Hardware – SQL & Power BI Business Insights Challenge
 ## Project Overview
 
 - AtliQ Hardwares is one of the leading computer hardware producers in India and has expanded globally. However, the management team faced challenges in making quick, data-informed  decisions due to the lack of actionable insights.
