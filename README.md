@@ -106,3 +106,21 @@
 > 3. Customer discount policies
 
 > 4. Channel performance optimization
+
+## Skills Demonstrated
+
+- This project highlights the following data analytics skills:
+
+- [X] SQL Querying
+
+- [X] Window Functions
+
+- [X] Aggregations & Joins
+
+- [X] Business Data Analysis
+
+- [X] Data Storytelling
+
+- [X] Dashboard Presentation
+
+- [X] Analytical Thinking
