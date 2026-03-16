@@ -35,14 +35,14 @@
 
 - Main tables include:
   
-| Table Name | Description |
-|------------|-------------|
-| dim_customer | Customer information |
-| dim_product | Product details |
-| fact_sales_monthly | Monthly sales transactions |
-| fact_manufacturing_cost | Product manufacturing costs |
-| fact_pre_invoice_deductions | Pre-invoice deductions |
-| fact_gross_price | Product pricing data |
+| Table Name | Type | Description |
+|------------|------|-------------|
+| dim_customer | Dimension Table | Stores customer details |
+| dim_product | Dimension Table | Contains product information |
+| fact_sales_monthly | Fact Table | Monthly sales transaction data |
+| fact_manufacturing_cost | Fact Table | Manufacturing cost per product |
+| fact_pre_invoice_deductions | Fact Table | Discounts before invoice |
+| fact_gross_price | Fact Table | Product gross pricing |
 
 - These datasets help analyze:
 
